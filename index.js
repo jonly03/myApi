@@ -81,6 +81,8 @@ server.delete("/destinations", (req, res) => {
   res.send({ status: "success" });
 });
 
-server.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT, () => {
   console.log("Server listening");
 });
